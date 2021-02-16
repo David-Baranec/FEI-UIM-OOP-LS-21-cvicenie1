@@ -2,10 +2,19 @@ package sk.stuba.fei.uim.oop;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("5 + 7 je "+ scitaj(5, 7));
-    }
+        int[] mojePole = new int[10];
 
-    public static int scitaj(int a, int b) {
-        return a + b;
+        for (int i = 0; i < mojePole.length; i++) {
+            if (i == 0) {
+                mojePole[i] = 1;
+                continue;
+            }
+
+            mojePole[i] = mojePole[i - 1] * 2;
+        }
+
+        for (int i = 0; i < mojePole.length; i++) {
+            System.out.println(i + " : " + mojePole[i]);
+        }
     }
 }

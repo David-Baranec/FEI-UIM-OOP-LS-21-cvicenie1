@@ -2,18 +2,10 @@ package sk.stuba.fei.uim.oop;
 
 public class App {
     public static void main(String[] args) {
-        int a = 0;
-        while (a < 6) {
-            System.out.println("fake for a = " + a);
-            a++;
-        }
+        System.out.println("5 + 7 je "+ scitaj(5, 7));
+    }
 
-        System.out.println();
-
-        int b = 0;
-        do {
-            b++;
-            System.out.println("fake for b = " + b);
-        } while (b < 6);
+    public static int scitaj(int a, int b) {
+        return a + b;
     }
 }

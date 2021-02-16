@@ -2,7 +2,10 @@ package sk.stuba.fei.uim.oop;
 
 public class App {
     public static void main(String[] args) {
-        boolean pravda = true;
-        boolean nepravda = false;
+        if (false)
+            System.out.print("Hello ");
+        else if (true) {
+            System.out.println("world");
+        }
     }
 }

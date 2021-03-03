@@ -16,5 +16,7 @@ public class App {
         for (int i = 0; i < mojePole.length; i++) {
             System.out.println(i + " : " + mojePole[i]);
         }
+        System.out.println("good job");
     }
+
 }
